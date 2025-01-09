@@ -1,7 +1,7 @@
 import React from 'react'
-import burgerImage1 from './../assets/burger1.jpg'
-import burgerImage2 from './../assets/burger2.jpg'
-import burgerImage3 from './../assets/burger3.jpg'
+import burgerImage1 from './../assets/pizza22.jpg'
+import burgerImage2 from './../assets/pizza22.jpg'
+import burgerImage3 from './../assets/pizza22.jpg'
 function Menu() {
   return (
     <>
