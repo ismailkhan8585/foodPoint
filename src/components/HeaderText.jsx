@@ -1,6 +1,6 @@
 import React from "react";
 import aboutImage from "./../assets/pizza22.jpg";
-function HomeComponent() {
+function HeaderText() {
   return (
     <>
       <div>
@@ -40,4 +40,4 @@ function HomeComponent() {
   );
 }
 
-export default HomeComponent;
+export default HeaderText;
