@@ -1,19 +1,16 @@
 import React from "react";
 import Hero from "../../components/Hero";
-import Menu from "../../components/Menu";
-import Reservation from "../../components/Reservation";
 import Testimonials from "../../components/Testimonials";
 import Gallery from "../../components/Gallery";
-import ContactUs from "../../components/Contactus";
 import BurgerImage from "../../assets/pizza22.jpg";
-import Footer from "../../components/Footer";
-import PizzaDeals from "../Pizaa/Pizaadeals";
+import Homedeals from "./Homedeals";
+
 
 const Home = () => {
   return (
     <>
       <Hero
-        title="Welcome to Pizza Point"
+        title="Welcome to Food Point"
         subtitle="Discover the Best Dishes in Town"
         buttonText="Browse Our Menu"
         buttonLink="#menu"
@@ -22,14 +19,13 @@ const Home = () => {
         aboutText2="Whether you're craving pizza, burgers, or gourmet specialties, we have something to satisfy every appetite."
         aboutImage={BurgerImage}
       />
-      <Menu />
+      <Homedeals/>
+      {/* <Menu /> */}
       {/* <Deals /> */}
-      <PizzaDeals/>
+      {/* <PizzaDeals/> */}
       {/* <Reservation /> */}
       <Testimonials />
       <Gallery />
-      {/* <ContactUs /> */}
-      <Footer />
     </>
   );
 };

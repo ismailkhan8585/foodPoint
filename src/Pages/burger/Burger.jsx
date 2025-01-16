@@ -1,10 +1,10 @@
 import React from "react";
 import Hero from "../../components/Hero";
 import burgerImage from "../../assets/burger1.jpg";
-
-
 import "./burger.css";
-// import ChickenBurger from "./ChickenBurger";
+import ChickenBurger from "./ChickenBurger";
+import BeefBurger from "./BeefBurger";
+
 const Burger = () => {
   return (
     <>
@@ -18,7 +18,8 @@ const Burger = () => {
         aboutText2="From timeless classics to bold gourmet flavors, every burger is crafted to perfection, delivering an unforgettable experience."
         aboutImage={burgerImage}
       />
-     {/* <ChickenBurger/> */}
+     <ChickenBurger/>
+     <BeefBurger/>
     </>
   );
 };

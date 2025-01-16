@@ -6,6 +6,7 @@ import Burger from "./Pages/burger/Burger";
 import Kebab from "./Pages/kebab/Kebab";
 import Navbar from "./components/Navbar";
 import PizzaDeals from "./Pages/Pizaa/Pizaadeals";
+import Footer from "./components/Footer";
 
 const AppRoutes = () => (
   <Router>
@@ -18,6 +19,7 @@ const AppRoutes = () => (
       <Route path="/PizzaDeals" element={<PizzaDeals />} />
 
     </Routes>
+    <Footer/>
   </Router>
 );
 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import iconLogo from "./../assets/iconlogo.png";
 import { Link } from "react-router-dom";
-import { FaShoppingCart } from "react-icons/fa";
+import { IoBagOutline } from "react-icons/io5";
 import { IoMdArrowDropdown } from "react-icons/io";
 
 function Navbar() {
@@ -55,7 +55,7 @@ function Navbar() {
           </ul>
         </nav>
         <li className="add-menu-btn">
-          <FaShoppingCart />
+        <IoBagOutline />
         </li>
         {showMenu ? (
           <li className="fas fa-times menu-toggle" onClick={toggleMenu}></li>

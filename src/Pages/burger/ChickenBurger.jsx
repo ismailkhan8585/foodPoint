@@ -1,85 +1,78 @@
-import React from 'react';
-
+import React from "react";
+import burgerRuber from '../../assets/Reggy Burger.png'
+import CroncoChicken from '../../assets/Cronco Chicken Burger.png'
+import CheeHaww from '../../assets/Chee Haww Chicken Burger.png'
+import ReggyChicken from '../../assets/Reggy Chicken Burger.png'
 
 const ChickenBurger = () => {
   return (
-    <div className="chicken-burger-container">
-      <div className="burger-grid">
-        <div className="burger-card">
-          <div className="burger-image-container">
-            <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-01-15%20160719-mKjDIHVZXrFQNACuKRS9ryJpgaF6B0.png"
-              alt="Bronco Chicken Burger"
-              className="burger-image"
-            />
+    <div className="chicken-burger-section">
+      <h1 className="section-heading">Chicken Burgers</h1>
+      <div className="menuGrid">
+        <div className="menuItem">
+          <div className="menuImage">
+            <img src={burgerRuber} alt="Bronco Chicken Burger" />
           </div>
-          <div className="burger-content">
-            <h2 className="burger-title">Bronco Chicken Burger</h2>
-            <p className="burger-description">
-              Juicy Zinger, smothered in hot sauce, delivering a scorching hot and ...
+          <div className="menuContent">
+            <h2 className="menuTitle">Bronco Chicken Burger</h2>
+            <p className="menuDescription">
+              Juicy Zinger, smothered in hot sauce, delivering a scorching hot
+              and spicy kick with every bite.
             </p>
-            <div className="burger-footer">
+            <div className="menuFooter">
               <span className="price">Rs. 599</span>
-              <button className="add-to-cart">Add to Cart</button>
+              <button className="addToCart">ADD TO CART</button>
             </div>
           </div>
         </div>
 
-        <div className="burger-card">
-          <div className="burger-image-container">
-            <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-01-15%20160719-mKjDIHVZXrFQNACuKRS9ryJpgaF6B0.png"
-              alt="Cronco Chicken Burger"
-              className="burger-image"
-            />
+        <div className="menuItem">
+          <div className="menuImage">
+            <img src={CroncoChicken} alt="Cronco Chicken Burger" />
           </div>
-          <div className="burger-content">
-            <h2 className="burger-title">Cronco Chicken Burger</h2>
-            <p className="burger-description">
-              Juicy Zinger, smothered in Buffalo sauce, offering a sweet & ...
+          <div className="menuContent">
+            <h2 className="menuTitle">Cronco Chicken Burger</h2>
+            <p className="menuDescription">
+              Juicy Zinger, smothered in Buffalo sauce, offering a sweet &
+              tangy flavor explosion in every mouthful.
             </p>
-            <div className="burger-footer">
+            <div className="menuFooter">
               <span className="price">Rs. 599</span>
-              <button className="add-to-cart">Add to Cart</button>
+              <button className="addToCart">ADD TO CART</button>
             </div>
           </div>
         </div>
 
-        <div className="burger-card">
-          <div className="burger-image-container">
-            <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-01-15%20160719-mKjDIHVZXrFQNACuKRS9ryJpgaF6B0.png"
-              alt="Chee Haww Chicken"
-              className="burger-image"
-            />
+        <div className="menuItem">
+          <div className="menuImage">
+            <img src={CheeHaww} alt="Chee Haww Chicken" />
           </div>
-          <div className="burger-content">
-            <h2 className="burger-title">Chee Haww Chicken</h2>
-            <p className="burger-description">
-              A spicy fusion of two grilled chicken fillets embracing a Jalapeño ...
+          <div className="menuContent">
+            <h2 className="menuTitle">Chee Haww Chicken</h2>
+            <p className="menuDescription">
+              A spicy fusion of two grilled chicken fillets embracing a
+              Jalapeño cheese core, topped with fiery sauce.
             </p>
-            <div className="burger-footer">
+            <div className="menuFooter">
               <span className="price">Rs. 899</span>
-              <button className="add-to-cart">Add to Cart</button>
+              <button className="addToCart">ADD TO CART</button>
             </div>
           </div>
         </div>
-         <div className="burger-card">
-          <div className="burger-image-container">
-            <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-01-15%20160719-mKjDIHVZXrFQNACuKRS9ryJpgaF6B0.png"
-              alt="Chee Haww Chicken"
-              className="burger-image"
-            />
+
+        <div className="menuItem">
+          <div className="menuImage">
+            <img src={ReggyChicken} alt="Reggy Chicken Burger" />
           </div>
-          <div className="burger-content">
-            <h2 className="burger-title">Chee Haww Chicken</h2>
-            <p className="burger-description">
-              A spicy fusion of two grilled chicken fillets embracing a Jalapeño ...
+          <div className="menuContent">
+            <h2 className="menuTitle">Reggy Chicken Burger</h2>
+            <p className="menuDescription">
+              Our signature chicken fillet topped with crisp lettuce, fresh tomato,
+              and creamy mayo for a classic taste.
             </p>
-            <div className="burger-footer">
-              <span className="price">Rs. 899</span>
-              <button className="add-to-cart">Add to Cart</button>
+            <div className="menuFooter">
+              <span className="price">Rs. 699</span>
+              <button className="addToCart">ADD TO CART</button>
             </div>
           </div>
         </div>
@@ -89,3 +82,4 @@ const ChickenBurger = () => {
 };
 
 export default ChickenBurger;
+

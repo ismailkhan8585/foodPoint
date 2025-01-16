@@ -6,7 +6,8 @@ import ChickenLover from '../assets/Chicken Lover pizza image.png'
 
 const Localpizaadeals = () => {
   return (
-    <div className="container">
+    <section id='menu'>
+      <div className="container">
       <h1>Somewhat Local</h1>
       <div className="products-grid">
         
@@ -74,6 +75,7 @@ const Localpizaadeals = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
