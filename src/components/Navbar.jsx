@@ -19,8 +19,10 @@ function Navbar() {
   return (
     <>
       <header>
-        <div className="logo">
-          <img src={iconLogo} alt="Berger Hut Logo" />
+      <div className="logo">
+          <Link to="/">
+            <img src={iconLogo} alt="Burger Hut Logo" />
+          </Link>
         </div>
         <nav>
           <ul className={showMenu ? "show" : ""}>

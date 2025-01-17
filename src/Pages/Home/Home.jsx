@@ -4,6 +4,7 @@ import Testimonials from "../../components/Testimonials";
 import Gallery from "../../components/Gallery";
 import BurgerImage from "../../assets/pizza22.jpg";
 import Homedeals from "./Homedeals";
+import DealsCard from "./DealsCard";
 
 
 const Home = () => {
@@ -20,12 +21,13 @@ const Home = () => {
         aboutImage={BurgerImage}
       />
       <Homedeals/>
+      <DealsCard/>
       {/* <Menu /> */}
       {/* <Deals /> */}
       {/* <PizzaDeals/> */}
       {/* <Reservation /> */}
-      <Testimonials />
       <Gallery />
+      <Testimonials />
     </>
   );
 };
