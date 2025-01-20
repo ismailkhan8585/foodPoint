@@ -9,7 +9,7 @@ function Navbar() {
   const [menuItems] = useState([
     { name: "Pizaa", link: "/pizza" },
     { name: "Burger", link: "/burger" },
-    { name: "Kubab", link: "/kebab" },
+    { name: "Kebab", link: "/kebab" },
   ]);
 
   const toggleMenu = () => {

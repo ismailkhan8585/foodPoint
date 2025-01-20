@@ -338,7 +338,7 @@ h1 {
 }
 
 .product-image {
-  width: 100%;
+  width: 500px;
   height: auto;
   margin-bottom: 1rem;
   transition: transform 0.3s ease;

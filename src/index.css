@@ -13,6 +13,7 @@ header {
   align-items: center;
   justify-content: space-between;
   position: relative;
+  z-index: 1000;
 }
 
 .menu-link{
@@ -199,23 +200,37 @@ nav ul li a:hover {
 
 
 /*hero*/
-
 .hero {
-  background-image: url("assets/hero-background1.jpg");
-  background-size: cover;
-  background-position: center;
+  background-image: url("assets/HomePizaajpg.jpg");
+  background-size: cover; /* Make sure the image covers the entire space */
+  background-position: right right; /* Position the image on the right */
   height: 100vh;
   display: flex;
+  justify-content: flex-start; /* Align the content to the left */
   text-align: left;
-  color: #fff;
+  color: black;
+  
 }
 
 @media screen and (max-width: 768px) {
   .hero {
     text-align: center;
+    background-position: center center; /* Center the image on smaller screens */
   }
   .hero-content h1 {
     font-size: 36px;
+  }
+}
+
+
+@media(max-width: 480px) {
+  /* Styles for standard mobile phones */
+
+  .hero-content h1 {
+    font-size: 25px !important;;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #070e16;
   }
 }
 
@@ -224,15 +239,19 @@ nav ul li a:hover {
   padding: 20px;
   margin-top: 50px;
   margin-left: 4%;
+  flex: 1; /* Allow text section to take up available space */
 }
 
 .hero-content h1 {
   font-size: 48px;
   margin-bottom: 20px;
+  font-weight: 700;
+  color: #070e16;
 }
 
 .hero-content p {
   font-size: 24px;
+  font-weight: 600;
   margin-bottom: 30px;
 }
 
