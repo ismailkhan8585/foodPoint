@@ -302,7 +302,7 @@ h1 {
 }
 
 .product-card {
-  background-color: #222;
+  background-color: white;
   border-radius: 10px;
   padding: clamp(1rem, 2vw, 1.5rem);
   position: relative;
@@ -351,12 +351,12 @@ h1 {
 .product-title {
   font-size: clamp(1.25rem, 2vw, 1.5rem);
   margin-bottom: 0.5rem;
- color: #fff;
+ color: black;
 }
 
 .product-description {
   font-size: clamp(0.875rem, 1.5vw, 1rem);
- color: #fff;
+ color: #666;
   margin-bottom: 1rem;
   line-height: 1.5;
 }
@@ -370,7 +370,7 @@ h1 {
 
 .price {
   font-size: clamp(1.25rem, 2vw, 1.5rem);
- color: #fff;
+  color: #ff4b4b !important;
   font-weight: bold;
 }
 

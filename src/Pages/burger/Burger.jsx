@@ -4,11 +4,12 @@ import burgerImage from "../../assets/burger1.jpg";
 import "./burger.css";
 import ChickenBurger from "./ChickenBurger";
 import BeefBurger from "./BeefBurger";
+import BurgerHero from "./BurgerHero";
 
 const Burger = () => {
   return (
     <>
-      <Hero
+      {/* <Hero
         title="Discover the Best Burgers at Pizza Point"
         subtitle="Indulge in a Flavorsome Burger Adventure"
         buttonText="Explore Our Burger Menu"
@@ -17,7 +18,8 @@ const Burger = () => {
         aboutText1="Burger Point is your destination for irresistibly delicious burgers made with premium, fresh ingredients."
         aboutText2="From timeless classics to bold gourmet flavors, every burger is crafted to perfection, delivering an unforgettable experience."
         aboutImage={burgerImage}
-      />
+      /> */}
+      <BurgerHero/>
      <ChickenBurger/>
      <BeefBurger/>
     </>

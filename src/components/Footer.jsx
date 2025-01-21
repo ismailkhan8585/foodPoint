@@ -1,37 +1,33 @@
 import React from "react";
-// import iconLogo from './../assets/iconlogo.png'
-import YoutubrIcon from "../assets/youtube.png"
-import instagram from "../assets/instagram.png"
-import facebook from "../assets/facebook.png"
-import play from "../assets/play.png"
-import app from "../assets/app.png"
-import burger from "../assets/iconlogo.png"
+import YoutubrIcon from "../assets/youtube.png";
+import instagram from "../assets/instagram.png";
+import facebook from "../assets/facebook.png";
+import play from "../assets/play.png";
+import app from "../assets/app.png";
+import burger from "../assets/iconlogo.png";
+
 function Footer() {
-  // const year = new Date().getFullYear()
   return (
     <>
-      <footer class="footer">
-        <div class="footer-content">
-          <div class="footer-logo">
-            <img
-             src={burger}
-              alt="KFC Logo"
-            />
+      <footer className="footer">
+        <div className="footer-content">
+          <div className="footer-logo">
+            <img src={burger} alt="KFC Logo" />
           </div>
 
-          <div class="social-icons">
-            <a href="#" class="social-icon">
-              <img src={YoutubrIcon} alt="YouTube"  />
+          <div className="social-icons">
+            <a href="#" className="social-icon">
+              <img src={YoutubrIcon} alt="YouTube" />
             </a>
-            <a href="#" class="social-icon">
+            <a href="#" className="social-icon">
               <img src={instagram} alt="Instagram" />
             </a>
-            <a href="#" class="social-icon">
+            <a href="#" className="social-icon">
               <img src={facebook} alt="Facebook" />
             </a>
           </div>
 
-          <div class="footer-links">
+          <div className="footer-links">
             <div>
               <a href="#">About Us</a>
               <a href="#">Mitao Bhook</a>
@@ -48,7 +44,7 @@ function Footer() {
             </div>
           </div>
 
-          <div class="app-buttons">
+          <div className="app-buttons">
             <a href="#">
               <img src={play} alt="Download on App Store" />
             </a>
@@ -57,9 +53,9 @@ function Footer() {
             </a>
           </div>
 
-          <div class="footer-bottom">
+          <div className="footer-bottom">
             <div>2025 Food Point. All rights reserved</div>
-            <div class="powered-by">
+            <div className="powered-by">
               <span>Powered by</span>
               <a
                 href="#"
@@ -71,29 +67,6 @@ function Footer() {
           </div>
         </div>
       </footer>
-      {/* <footer className="footer" id='footer'>
-        <div className="footer-content">
-          <div className="footer-logo">
-            <img src={iconLogo} alt="Logo" />
-          </div>
-          <nav className="footer-links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Menu</a>
-            <a href="#">Reservations</a>
-            <a href="#">Testimonials</a>
-            <a href="#">Gallery</a>
-            <a href="#">Contact</a>
-          </nav>
-          &nbsp; &nbsp;
-          <div className="footer-social">
-            <a href="#"><i className="fab fa-facebook fa-2x"></i></a>
-            <a href="#"><i className="fab fa-twitter fa-2x"></i></a>
-            <a href="#"><i className="fab fa-instagram fa-2x"></i></a>
-          </div>
-        </div>
-        <p className="footer-text">© {year} Burger Hut. All rights reserved.</p>
-      </footer> */}
     </>
   );
 }

@@ -144,4 +144,92 @@
     }
   }
   
-  
+  /*burger Herooooooo  */
+
+ /* Base Styles for Burger Hero Section */
+.burger-hero {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the left */
+  height: 80vh;
+  padding: 20px;
+  background-image: url('../../assets/hero-background1.jpg'); /* Replace with the actual image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #070e16; /* Fallback color */
+
+}
+
+.burger-hero-content {
+  max-width: 600px;
+  text-align: left; 
+  padding: 20px;
+
+}
+
+.burger-title {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.burger-subtitle {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.burger-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ff0000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.burger-btn:hover {
+  background-color: #e60000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .burger-hero {
+    padding: 20px;
+  }
+
+  .burger-hero-content {
+    max-width: 90%; /* Adjust content width for smaller devices */
+  }
+
+  .burger-title {
+    font-size: 36px;
+  }
+
+  .burger-subtitle {
+    font-size: 18px;
+  }
+
+  .burger-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .burger-title {
+    font-size: 28px;
+  }
+
+  .burger-subtitle {
+    font-size: 14px;
+  }
+
+  .burger-btn {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}
