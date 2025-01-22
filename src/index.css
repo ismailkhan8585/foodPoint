@@ -200,57 +200,47 @@ nav ul li a:hover {
 
 
 /* Media Queries for Mobile */
+/* Adjust nav ul styles for mobile devices */
 @media (max-width: 768px) {
-  /* Adjust menu items to be vertically stacked on mobile */
-  
-  .icons {
-    justify-content: flex-end; /* Push icons to the right */
-  }
   nav ul {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #070e16;
+    position: fixed; /* Fix the menu to the screen */
+    top: 30%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    width: 90%; /* Optional: Width of the menu */
+    background-color: #070e16; /* Ensure the background color covers the entire menu */
     flex-direction: column; /* Stack items vertically */
-    align-items: flex-start;
-    padding: 10px;
+    align-items: center; /* Center items */
+    padding: 20px; /* Add some padding */
     display: none; /* Hide the menu by default */
+    z-index: 1001; /* Ensure it appears above other elements */
   }
 
   nav ul.show {
-    display: flex; /* Show menu when toggled */
+    display: flex; /* Show the menu when toggled */
   }
 
   nav ul li {
-    margin: 10px 0;
-    width: 100%;
+    margin: 10px 0; /* Add spacing between menu items */
+    width: 100%; /* Take full width */
+    text-align: center; /* Center align the text */
   }
 
   nav ul li a {
     padding: 10px;
-    text-align: left; /* Align text to the left on mobile */
+    text-align: center; /* Center the text inside each menu item */
     width: 100%;
   }
 
-  /* Dropdown Menu for Mobile */
-  .dropdown-menu {
-    position: relative;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    box-shadow: none;
-  }
-
-  /* Toggle button for the menu */
   .menu-toggle {
-    display: block; /* Show the toggle button on mobile */
+    display: block; /* Ensure the toggle button is visible */
     position: absolute;
     right: 20px;
     top: 20px;
     font-size: 1.5rem;
     color: #fff;
     cursor: pointer;
+    z-index: 1002; /* Ensure it appears above the menu */
   }
 }
 
