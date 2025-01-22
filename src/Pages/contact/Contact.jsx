@@ -55,7 +55,7 @@ const Contact = () => {
               >
                 <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
               </svg>
-              <span>info@eurofreshmart.com</span>
+              <span>info@FoodPoint.com</span>
             </div>
             <div className="contact-item">
               <svg

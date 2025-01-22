@@ -3,6 +3,7 @@ import iconLogo from "./../assets/iconlogo.png";
 import { Link } from "react-router-dom";
 import { IoBagOutline } from "react-icons/io5";
 import { IoMdArrowDropdown } from "react-icons/io";
+import { AiOutlineHeart, AiFillHeart } from "react-icons/ai"; // Import heart icons
 import Modelcard from "../Pages/Modelcard/Modelcard";
 
 function Navbar() {
@@ -13,6 +14,7 @@ function Navbar() {
     { name: "Burger", link: "/burger" },
     { name: "Kebab", link: "/kebab" },
   ]);
+  const [isLiked, setIsLiked] = useState(false); // State for heart icon toggle
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -20,6 +22,10 @@ function Navbar() {
 
   const toggleModal = () => {
     setShowModal(!showModal);
+  };
+
+  const toggleHeart = () => {
+    setIsLiked(!isLiked);
   };
 
   return (
@@ -60,14 +66,26 @@ function Navbar() {
             </li>
           </ul>
         </nav>
-        <li className="add-menu-btn" onClick={toggleModal}>
-          <IoBagOutline />
-        </li>
-        {showMenu ? (
-          <li className="fas fa-times menu-toggle" onClick={toggleMenu}></li>
-        ) : (
-          <li className="fas fa-bars menu-toggle" onClick={toggleMenu}></li>
-        )}
+
+        <div className="icons">
+          <li className="heart-icon-Navbar" onClick={toggleHeart}>
+            {isLiked ? (
+              <AiFillHeart className="heart-filled" />
+            ) : (
+              <AiOutlineHeart className="heart-outline" />
+            )}
+          </li>
+          <li className="add-menu-btn" onClick={toggleModal}>
+            <IoBagOutline />
+          </li>
+          {showMenu ? (
+            <li className="fas fa-times menu-toggle" onClick={toggleMenu}></li>
+          ) : (
+            <li className="fas fa-bars menu-toggle" onClick={toggleMenu}></li>
+          )}
+          {/* Add your beautiful button here */}
+          <button className="custom-button">Login</button>
+        </div>
       </header>
 
       {/* Modal Component */}

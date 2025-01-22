@@ -1,63 +1,77 @@
-import React from 'react'
-import '../Pizaa/pizaa.css'
-import pizaacheese from '../../assets/pizaacheese.png'
+import React, { useState } from 'react';
+import '../kebab/kebab.css'
+import pizaacheese from '../../assets/pizaacheese.png';
+import { FaHeart } from "react-icons/fa";
+
+const pizzaData = [
+  {
+    id: 1,
+    name: 'Cheezious Special',
+    description: 'Delicious Special Chicken With Black Olives, Sausages And Bell Pepper.',
+    price: 'Rs. 1,550',
+    image: pizaacheese,
+  },
+  {
+    id: 2,
+    name: 'Behari Kebab',
+    description: 'Enjoy Special Chicken Behari Kabab, Grilled Chicken With Onion Jalapenos And Gin...',
+    price: 'Rs. 1,550',
+    image: pizaacheese,
+  },
+  {
+    id: 3,
+    name: 'Chicken Extreme',
+    description: 'Combination Of 3 Flavors Of Chicken With Onion Bell Pepper, Green Olives, Mushro...',
+    price: 'Rs. 1,550',
+    image: pizaacheese,
+  },
+  {
+    id: 4,
+    name: 'Chicken Extreme',
+    description: 'Combination Of 3 Flavors Of Chicken With Onion Bell Pepper, Green Olives, Mushro...',
+    price: 'Rs. 1,550',
+    image: pizaacheese,
+  },
+];
 
 const PizzaCheezy = () => {
+  const [favorites, setFavorites] = useState({});
+
+  const toggleFavorite = (itemId) => {
+    setFavorites((prevFavorites) => ({
+      ...prevFavorites,
+      [itemId]: !prevFavorites[itemId],
+    }));
+  };
+
   return (
-    <div className="pizza-container">
-      <h1 className="cheesy-title">Cheezy Treats</h1>
-      <div className="pizza-item-grid">
-        
-        <div className="pizza-item-card">
-            <span className="favorite-heart-icon">♡</span>
-            <img src={pizaacheese} alt="Cheezious Special Pizza" className="pizza-img"/>
-            <h2 className="pizza-name">Cheezious Special</h2>
-            <p className="pizza-details">Delicious Special Chicken With Black Olives, Sausages And Bell Pepper.</p>
-            <div className="price-wrapper">
-                <span className="pizza-price">Rs. 1,550</span>
-                <span className="starting-price-label">Starting Price</span>
+    <div className="chicken-burger-section">
+      <h1 className="section-heading">Cheezy Treats</h1>
+      <div className="menuGrid">
+        {pizzaData.map((kebab) => (
+          <div className="menuItem" key={kebab.id}>
+            <div className="menuImage">
+              <img src={kebab.image} alt={kebab.name} />
+              <FaHeart
+                className={`heart-iconddd ${favorites[kebab.id] ? "active" : ""}`}
+                onClick={() => toggleFavorite(kebab.id)}
+              />
             </div>
-            <button className="add-to-cart-btn">+ ADD TO CART</button>
-        </div>
-
-        <div className="pizza-item-card">
-            <span className="favorite-heart-icon">♡</span>
-            <img src={pizaacheese} alt="Behari Kebab Pizza" className="pizza-img"/>
-            <h2 className="pizza-name">Behari Kebab</h2>
-            <p className="pizza-details">Enjoy Special Chicken Behari Kabab, Grilled Chicken With Onion Jalapenos And Gin...</p>
-            <div className="price-wrapper">
-                <span className="pizza-price">Rs. 1,550</span>
-                <span className="starting-price-label">Starting Price</span>
+            <div className="menuContent">
+              <h2 className="menuTitle">{kebab.name}</h2>
+              <p className="menuDescription">{kebab.description}</p>
+              <div className="menuFooter">
+                <span className="price">{kebab.price}</span>
+                <button className="addToCart">ADD TO CART</button>
+              </div>
             </div>
-            <button className="add-to-cart-btn">+ ADD TO CART</button>
-        </div>
-
-        <div className="pizza-item-card">
-            <span className="favorite-heart-icon">♡</span>
-            <img src={pizaacheese} alt="Chicken Extreme Pizza" className="pizza-img"/>
-            <h2 className="pizza-name">Chicken Extreme</h2>
-            <p className="pizza-details">Combination Of 3 Flavors Of Chicken With Onion Bell Pepper, Green Olives, Mushro...</p>
-            <div className="price-wrapper">
-                <span className="pizza-price">Rs. 1,550</span>
-                <span className="starting-price-label">Starting Price</span>
-            </div>
-            <button className="add-to-cart-btn">+ ADD TO CART</button>
-        </div>
-        <div className="pizza-item-card">
-            <span className="favorite-heart-icon">♡</span>
-            <img src={pizaacheese} alt="Chicken Extreme Pizza" className="pizza-img"/>
-            <h2 className="pizza-name">Chicken Extreme</h2>
-            <p className="pizza-details">Combination Of 3 Flavors Of Chicken With Onion Bell Pepper, Green Olives, Mushro...</p>
-            <div className="price-wrapper">
-                <span className="pizza-price">Rs. 1,550</span>
-                <span className="starting-price-label">Starting Price</span>
-            </div>
-            <button className="add-to-cart-btn">+ ADD TO CART</button>
-        </div>
+          </div>
+        ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default PizzaCheezy
+export default PizzaCheezy;
+
 

@@ -22,10 +22,6 @@ const Home = () => {
       />
       <Homedeals/>
       <DealsCard/>
-      {/* <Menu /> */}
-      {/* <Deals /> */}
-      {/* <PizzaDeals/> */}
-      {/* <Reservation /> */}
       <Gallery />
       <Testimonials />
     </>

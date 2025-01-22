@@ -3,8 +3,6 @@ import "./kebab.css";
 import KebabImage from "../../assets/kubab.jpg";
 import TypesKubab from "./TypesKubab";
 import MoreTypes from "./MoreTypes";
-import doner from '../../assets/Doner Kebab Image.png'
-// import FlameIcon from "../../assets/flame-icon.svg";
 
 const Kebab = () => {
   return (
@@ -45,13 +43,3 @@ const Kebab = () => {
 
 export default Kebab;
 
-{/* <Hero
-title="The Finest Kebabs Await"
-subtitle="Indulge in Authentic Flavors"
-buttonText="Explore Kebabs"
-buttonLink="#kebab-menu"
-aboutTitle="Why Kebab Corner?"
-aboutText1="Experience perfectly grilled, flavorful kebabs crafted with care and tradition."
-aboutText2="From tender tandoori to mouthwatering shawarma, enjoy the best in every bite."
-aboutImage={KebabImage}
-/> */}
