@@ -3,8 +3,18 @@ import burgerRuber from '../../assets/Reggy Burger.png';
 import CroncoChicken from '../../assets/Cronco Chicken Burger.png';
 import CheeHaww from '../../assets/Chee Haww Chicken Burger.png';
 import ReggyChicken from '../../assets/Reggy Chicken Burger.png';
+import { FaHeart } from "react-icons/fa";
+import './burger.css'
+import { useState } from "react";
 
 const ChickenBurger = () => {
+  const [likedBurgers, setLikedBurgers] = useState([]);
+
+  const toggleLike = (id) => {
+    setLikedBurgers((prev) =>
+      prev.includes(id) ? prev.filter((burgerId) => burgerId !== id) : [...prev, id]
+    );
+  };
   const chickenBurgers = [
     {
       id: 1,
@@ -46,6 +56,12 @@ const ChickenBurger = () => {
       <div className="menuGrid">
         {chickenBurgers.map((burger) => (
           <div className="menuItem" key={burger.id}>
+            <div
+              className={`heartIcon ${likedBurgers.includes(burger.id) ? "liked" : ""}`}
+              onClick={() => toggleLike(burger.id)}
+            >
+              <FaHeart icon={FaHeart} />
+            </div>
             <div className="menuImage">
               <img src={burger.image} alt={burger.title} />
             </div>
